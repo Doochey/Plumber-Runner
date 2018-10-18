@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-	private Vector3 origin;
 	private float horizontalSpeed = 0.3f;
 	private float VerticalSpeed = 0.3f;
 
-	// Use this for initialization
 	void Start ()
 	{
-		origin = gameObject.transform.position;
 		Cursor.visible = false;
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
 		Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
@@ -47,6 +43,7 @@ public class Movement : MonoBehaviour
 			transform.Translate(hs, vs, 0);
 		}
 
+		 
 		if (Input.GetKey(KeyCode.LeftShift))
 		{
 			transform.Translate(0, 0, 0.1f);

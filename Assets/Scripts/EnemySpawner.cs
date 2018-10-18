@@ -20,7 +20,6 @@ public class EnemySpawner : MonoBehaviour {
 
 	
 	
-	// Update is called once per frame
 	void Start ()
 	{
 		eSpawned = 0;

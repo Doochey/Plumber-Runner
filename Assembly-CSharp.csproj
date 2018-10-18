@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\Collision.cs" />
     <Compile Include="Assets\Scripts\DistanceCounter.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
-    <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Quitter.cs" />
     <Compile Include="Assets\Scripts\ResetSpawn.cs" />

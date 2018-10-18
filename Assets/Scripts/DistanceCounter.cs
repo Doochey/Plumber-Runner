@@ -11,13 +11,11 @@ public class DistanceCounter : MonoBehaviour
 
 	private int distanceCount = 0;
 
-	// Use this for initialization
 	void Start ()
 	{
 		distanceText.text = "DISTANCE: " + distanceCount.ToString() + "m";
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
 		if (player != null)

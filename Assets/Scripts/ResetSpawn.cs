@@ -25,6 +25,7 @@ public class ResetSpawn : MonoBehaviour
 			float z = Random.Range(origin.z - randRange, origin.z + randRange);
 			transform.position = new Vector3(x, y, z);
 
+			// Randomises Scale
 			float sx = Random.Range(minSize, maxSize);
 			float sy = Random.Range(minSize, maxSize);
 			float sz = Random.Range(minSize, maxSize);

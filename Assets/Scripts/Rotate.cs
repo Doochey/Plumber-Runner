@@ -11,7 +11,6 @@ public class Rotate : MonoBehaviour {
 	private Vector3 rotation;
 	private Vector3 r;
 	
-	// Update is called once per frame
 	private void Start()
 	{
 		r = generateRotation();
@@ -29,8 +28,6 @@ public class Rotate : MonoBehaviour {
 		float rx = Random.Range(rotateMin, rotateMax);
 		float ry = Random.Range(rotateMin, rotateMax);
 		float rz = Random.Range(rotateMin, rotateMax);
-		int plusOrMinus = Random.Range(0, 1);
-		if (plusOrMinus == 0)
 		
 		rotation = new Vector3(rx,ry,rz);
 		

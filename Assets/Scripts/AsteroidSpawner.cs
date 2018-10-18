@@ -20,8 +20,6 @@ public class AsteroidSpawner : MonoBehaviour
 	private float speed;
 
 	
-	
-	// Update is called once per frame
 	void Start ()
 	{
 		aSpawned = 0;

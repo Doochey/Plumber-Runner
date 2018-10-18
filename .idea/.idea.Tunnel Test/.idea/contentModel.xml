@@ -16,28 +16,6 @@
             </e>
           </e>
         </e>
-        <e p="Mirza Beig" t="Include">
-          <e p="_DOCS" t="Include">
-            <e p="README - Inferno VFX.txt" t="Include" />
-          </e>
-          <e p="Particle Systems" t="Include">
-            <e p="_Common" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="_Demo" t="Include">
-                  <e p="DemoManager.cs" t="Include" />
-                  <e p="FPSDisplay.cs" t="Include" />
-                  <e p="FPSTest.cs" t="Include" />
-                  <e p="LoopingParticleSystemsManager.cs" t="Include" />
-                  <e p="MouseFollow.cs" t="Include" />
-                  <e p="OneshotParticleSystemsManager.cs" t="Include" />
-                  <e p="ParticleManager.cs" t="Include" />
-                </e>
-                <e p="AnimatedLight.cs" t="Include" />
-                <e p="CameraShake.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -71,14 +49,6 @@
           <e p="Quitter.cs" t="Include" />
           <e p="ResetSpawn.cs" t="Include" />
           <e p="Rotate.cs" t="Include" />
-        </e>
-        <e p="SpaceSkies Free" t="Include">
-          <e p="Demo" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="LookCamera.cs" t="Include" />
-              <e p="SkyboxChanger.cs" t="Include" />
-            </e>
-          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
