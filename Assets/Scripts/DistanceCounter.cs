@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class DistanceCounter : MonoBehaviour
 {
-
 	public Text distanceText;
 	public GameObject player;
 
@@ -20,9 +19,8 @@ public class DistanceCounter : MonoBehaviour
 	{
 		if (player != null)
 		{
-			distanceCount = distanceCount + (int) (100 * Time.deltaTime);
+			distanceCount += (int) (100 * Time.deltaTime);
 			distanceText.text = "DISTANCE: " + distanceCount.ToString() + "m";
 		}
-		
 	}
 }
