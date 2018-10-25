@@ -44,6 +44,7 @@
           <e p="Collision.cs" t="Include" />
           <e p="DistanceCounter.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
+          <e p="Explode.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="Quitter.cs" t="Include" />
           <e p="ResetSpawn.cs" t="Include" />
