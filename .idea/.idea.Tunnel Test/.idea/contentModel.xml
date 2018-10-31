@@ -16,6 +16,22 @@
             </e>
           </e>
         </e>
+        <e p="Fonts" t="Include">
+          <e p="Jupiter" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Materials" t="Include">
+          <e p="UI-Default-No-Alpha.shader" t="Include" />
+        </e>
+        <e p="Powerups" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="AnimationScript.cs" t="Include" />
+            <e p="BonusPointsHandler.cs" t="Include" />
+            <e p="MultiplierIncreaseHandler.cs" t="Include" />
+            <e p="PowerupHandler.cs" t="Include" />
+          </e>
+        </e>
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -36,19 +52,35 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ActiveStateToggler.cs" t="Include" />
           <e p="AnimationControllers" t="Include">
             <e p="GameOverManager.cs" t="Include" />
             <e p="MoveAnimController.cs" t="Include" />
           </e>
+          <e p="ApplicationManager.cs" t="Include" />
           <e p="AsteroidSpawner.cs" t="Include" />
+          <e p="ChangeColor.cs" t="Include" />
           <e p="Collision.cs" t="Include" />
           <e p="DistanceCounter.cs" t="Include" />
+          <e p="DragMe.cs" t="Include" />
+          <e p="DragPanel.cs" t="Include" />
+          <e p="DropMe.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
-          <e p="Explode.cs" t="Include" />
+          <e p="LoadSceneOnClick.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
+          <e p="MultiplierCounter.cs" t="Include" />
+          <e p="PanelManager.cs" t="Include" />
+          <e p="PowerupCollision.cs" t="Include" />
+          <e p="PowerupSpawner.cs" t="Include" />
+          <e p="QuitOnClick.cs" t="Include" />
           <e p="Quitter.cs" t="Include" />
           <e p="ResetSpawn.cs" t="Include" />
+          <e p="ResizePanel.cs" t="Include" />
           <e p="Rotate.cs" t="Include" />
+          <e p="ScoreCounter.cs" t="Include" />
+          <e p="ScrollDetailTexture.cs" t="Include" />
+          <e p="ShowSliderValue.cs" t="Include" />
+          <e p="TiltWindow.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
@@ -288,6 +320,13 @@
                 <e p="ReflectiveDiffuseSpec.shader" t="Include" />
                 <e p="ReflectiveDiffuseSpecTransp.shader" t="Include" />
               </e>
+            </e>
+          </e>
+        </e>
+        <e p="Textures and Sprites" t="Include">
+          <e p="SF UI" t="Include">
+            <e p="Background" t="Include">
+              <e p="LICENSE.txt" t="Include" />
             </e>
           </e>
         </e>
