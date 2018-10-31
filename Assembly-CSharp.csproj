@@ -73,14 +73,20 @@
      <Compile Include="Assets\Scripts\DistanceCounter.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\HighscoreHandler.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MultiplierCounter.cs" />
      <Compile Include="Assets\Scripts\PowerupCollision.cs" />
      <Compile Include="Assets\Scripts\PowerupSpawner.cs" />
+     <Compile Include="Assets\Scripts\QuitOnClick.cs" />
      <Compile Include="Assets\Scripts\Quitter.cs" />
      <Compile Include="Assets\Scripts\ResetSpawn.cs" />
      <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\ScoreCounter.cs" />
+     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Ollie/Documents/GitHub/Plumber-Runner/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

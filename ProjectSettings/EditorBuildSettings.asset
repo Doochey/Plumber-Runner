@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/asteroid random size_rotation_speed spawn.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8a7756b2312fc0d409e3331cd8960fcd
+  - enabled: 1
+    path: Assets/Scenes/Blue Lagoon Nebula.unity
     guid: 223eee60ceb061041b3eaa9241570319
   m_configObjects: {}

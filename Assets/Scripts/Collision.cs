@@ -1,22 +1,29 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collision : MonoBehaviour {
+public class Collision : MonoBehaviour
+{
 
+	private static Boolean played = false;
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.CompareTag("Player"))
+		if (!played)
 		{
-			var exp = other.gameObject.GetComponent<ParticleSystem>();
-			exp.Play();
+			if (other.gameObject.CompareTag("Player"))
+			{
+				var exp = other.gameObject.GetComponent<ParticleSystem>();
+				exp.Play();
 			
-			Destroy(other.gameObject, exp.main.duration);
-			//other.gameObject.SetActive(false);
-		
+				Destroy(other.gameObject, exp.main.duration);
+				played = true;
 
+				//other.gameObject.SetActive(false);
 
+			}
 		}
+		
 	}
 }
