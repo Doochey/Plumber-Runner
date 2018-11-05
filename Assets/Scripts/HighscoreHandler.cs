@@ -42,7 +42,6 @@ public class HighscoreHandler : MonoBehaviour
 		int counter = 0;
 		foreach (int score in highscores)
 		{
-			print (score);
 			newString += "\n" + counter + ". " + score;
 			counter++;
 		}
