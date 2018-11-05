@@ -33,4 +33,9 @@ public class ScoreCounter : MonoBehaviour
 	{
 		scoreCount += bonusAmount * multiplier.GetMultiplier();
 	}
+
+	public int getScore()
+	{
+		return scoreCount;
+	}
 }

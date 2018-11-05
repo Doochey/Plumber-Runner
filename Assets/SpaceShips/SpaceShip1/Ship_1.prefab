@@ -29,7 +29,6 @@ GameObject:
   - component: {fileID: 65006556001871364}
   - component: {fileID: 114608360996353482}
   - component: {fileID: 114247720336610904}
-  - component: {fileID: 114536478064356038}
   m_Layer: 0
   m_Name: Ship_1
   m_TagString: Enemy
@@ -158,17 +157,6 @@ MonoBehaviour:
   randRange: 20
   minSize: 0.3
   maxSize: 0.6
---- !u!114 &114536478064356038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de35c519eec04d64bb860b58ca281dbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114608360996353482
 MonoBehaviour:
   m_ObjectHideFlags: 1
