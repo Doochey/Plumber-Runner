@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class DistanceCounter : MonoBehaviour
 	public GameObject player;
 
 	private int distanceCount = 0;
+	private Boolean halt;
 
 	void Start ()
 	{
@@ -17,10 +19,16 @@ public class DistanceCounter : MonoBehaviour
 	
 	void Update ()
 	{
-		if (player != null)
+		if (!halt)
 		{
 			distanceCount += (int) (100 * Time.deltaTime);
 			distanceText.text = "DISTANCE: " + distanceCount.ToString() + "m";
 		}
+	}
+
+
+	public void setHalt()
+	{
+		halt = true;
 	}
 }

@@ -8,6 +8,7 @@ TagManager:
   - despawner
   - Score
   - Multiplier
+  - Counter
   layers:
   - Default
   - TransparentFX

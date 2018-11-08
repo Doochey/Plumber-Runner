@@ -52,35 +52,25 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="ActiveStateToggler.cs" t="Include" />
           <e p="AnimationControllers" t="Include">
             <e p="GameOverManager.cs" t="Include" />
             <e p="MoveAnimController.cs" t="Include" />
           </e>
-          <e p="ApplicationManager.cs" t="Include" />
           <e p="AsteroidSpawner.cs" t="Include" />
-          <e p="ChangeColor.cs" t="Include" />
           <e p="Collision.cs" t="Include" />
           <e p="DistanceCounter.cs" t="Include" />
-          <e p="DragMe.cs" t="Include" />
-          <e p="DragPanel.cs" t="Include" />
-          <e p="DropMe.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="LoadSceneOnClick.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="MultiplierCounter.cs" t="Include" />
-          <e p="PanelManager.cs" t="Include" />
+          <e p="pause.cs" t="Include" />
           <e p="PowerupCollision.cs" t="Include" />
           <e p="PowerupSpawner.cs" t="Include" />
           <e p="QuitOnClick.cs" t="Include" />
           <e p="Quitter.cs" t="Include" />
           <e p="ResetSpawn.cs" t="Include" />
-          <e p="ResizePanel.cs" t="Include" />
           <e p="Rotate.cs" t="Include" />
           <e p="ScoreCounter.cs" t="Include" />
-          <e p="ScrollDetailTexture.cs" t="Include" />
-          <e p="ShowSliderValue.cs" t="Include" />
-          <e p="TiltWindow.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">

@@ -6,18 +6,24 @@ public class GameOverManager : MonoBehaviour
 {
 
 	public GameObject player;
+	public float time = 5f;
 
 	private Animator anim;
 
-	void Start () {
+	void Start()
+	{
 		anim = gameObject.GetComponent<Animator>();
-		
+
 	}
-	
-	void Update () {
+
+	void Update()
+	{
 		if (player == null)
 		{
 			anim.SetTrigger("GameOver");
+			
+			// Enables Cursor
+			Cursor.visible = true;
 		}
 	}
 }

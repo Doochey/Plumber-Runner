@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -43,7 +44,12 @@ public class Movement : MonoBehaviour
 			transform.Translate(hs, vs, 0);
 		}
 
-		 
+		if (Input.GetKey(KeyCode.R))
+		{
+			SceneManager.LoadScene(1);
+		}
+
+#if UNITY_EDITOR
 		if (Input.GetKey(KeyCode.LeftShift))
 		{
 			transform.Translate(0, 0, 0.1f);
@@ -53,7 +59,7 @@ public class Movement : MonoBehaviour
 		{
 			transform.Translate(0, 0, -0.1f);
 		}
-		
+#endif
 		
 	}
 
