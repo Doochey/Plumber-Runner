@@ -1345,8 +1345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9, y: 6}
-  m_SizeDelta: {x: -1005.1, y: -719.5191}
+  m_AnchoredPosition: {x: 15.700012, y: 9.899994}
+  m_SizeDelta: {x: 1367.4, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1798603191
 MonoBehaviour:
@@ -1369,7 +1369,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
-    m_FontSize: 100
+    m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1377,10 +1377,20 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: (GAME DESCRIPTION)
+  m_Text: 'Fly your ship through the Blue Lagoon Nebula but watch out for asteroids
+    and enemy ships
+
+
+    Move Up,Left,Down and Right with the mouse, OR W,A,S,D, OR Arrow Keys
+
+
+    Shoot with left (For asteroids) and right (For ships) mouse clicks
+
+
+    Collect powerups to increase your score or your score multiplier!'
 --- !u!222 &1798603192
 CanvasRenderer:
   m_ObjectHideFlags: 0

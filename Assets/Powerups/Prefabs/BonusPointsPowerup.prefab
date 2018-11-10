@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 114409586834573552}
   m_Layer: 0
   m_Name: BonusPointsPowerup
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

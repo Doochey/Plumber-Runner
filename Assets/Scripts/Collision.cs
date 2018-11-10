@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class Collision : MonoBehaviour
 {
 
-	public Text distanceCounter;
-	public Text GOdistanceCounter;
+	
 	
 	private static Boolean played = false;
 

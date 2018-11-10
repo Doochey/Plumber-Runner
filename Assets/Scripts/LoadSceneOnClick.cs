@@ -3,15 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadSceneOnClick : MonoBehaviour {
+public class LoadSceneOnClick : MonoBehaviour
+{
+
+	public Pause pause;
 
 	public void LoadSceneByIndex(int sceneIndex)
 	{
-		SceneManager.LoadScene(sceneIndex);
-		if (SceneManager.GetActiveScene().name == "Blue Lagoon Nebula")
+		
+		if (SceneManager.GetActiveScene().buildIndex == sceneIndex || sceneIndex == 0)
 		{
-			GameObject colliderObject = GameObject.FindWithTag("Enemy");
-			colliderObject.GetComponent<Collision>().reset();
+			if (pause.isPaused())
+			{
+				pause.Unpause();
+			}
+			Reset();
+			
+			
+			
 		}
+		SceneManager.LoadScene(sceneIndex);
+
+		if (sceneIndex == 0)
+		{
+			// Enables Cursor
+			Cursor.visible = true;
+		}
+	}
+
+	void Reset()
+	{
+		GameObject colliderObject = GameObject.FindWithTag("Enemy");
+		colliderObject.GetComponent<Collision>().reset();
 	}
 }
