@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4292453, g: 0.56989276, b: 1, a: 1}
+  m_Color: {r: 0.4292453, g: 0.56989276, b: 1, a: 0.9529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.3179164, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.071110725, g: 0.8867924, b: 0.12426427, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -788,6 +788,66 @@ Prefab:
         type: 2}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23545389307547008, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 15157d0978134764bbf273b7ed1a67df, type: 2}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0.36765754
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.96862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.8699108
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796374563793010, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163815748533222, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.4292453
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163815748533222, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163815748533222, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9934397
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163815748533222, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.9529412
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
@@ -1161,7 +1221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &662722731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1362,7 +1422,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.3179164, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.071110725, g: 0.8867924, b: 0.12426427, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1637,6 +1697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1570771478}
+  gameOverScreen: {fileID: 662722730}
   time: 4
 --- !u!1 &1109064485
 GameObject:
@@ -2075,7 +2136,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.3179164, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9339623, g: 0.12775902, b: 0.19790784, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2278,7 +2339,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.3179164, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.071110725, g: 0.8867924, b: 0.12426427, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2414,7 +2475,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.3179164, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.071110725, g: 0.8867924, b: 0.12426427, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7615,7 +7676,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.3179164, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9339623, g: 0.12775902, b: 0.19790784, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
