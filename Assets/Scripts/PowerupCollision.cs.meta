@@ -3,7 +3,10 @@ guid: 4a1f7407876c21d49b980633d7e347bc
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - powerupEffect: {instanceID: 0}
+  - powerupSound: {fileID: 1706847442501516, guid: c153cb2f71ca80e4dbb525feebc760e2,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

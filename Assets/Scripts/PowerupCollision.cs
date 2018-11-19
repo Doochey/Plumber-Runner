@@ -5,12 +5,16 @@ using UnityEngine;
 public class PowerupCollision : MonoBehaviour
 {
 	public PowerupHandler powerupEffect;
+    public GameObject powerupSound;
 
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Player"))
 		{
-			var exp = other.gameObject.GetComponent<ParticleSystem>();
+            // Play powerup sound
+            GameObject makeSound = Instantiate(powerupSound, this.transform.position, this.transform.rotation) as GameObject;
+
+            var exp = other.gameObject.GetComponent<ParticleSystem>();
 			exp.Play();
 
 			powerupEffect.Apply ();

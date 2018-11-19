@@ -3,7 +3,9 @@ guid: f1bb242332f9dd642ad8b255a1d5b525
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - laserSound: {fileID: 1163224434748488, guid: cc3562036d20c3c459c8bbaf366bb2f7,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

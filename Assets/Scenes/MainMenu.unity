@@ -463,6 +463,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 163963675}
   m_CullTransparentMesh: 0
+--- !u!1001 &237967663
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.35295725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.886858
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.6998854
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301151965561042, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b74409b539eda34ab9ff9a854a2abab, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &532125682
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1bb242332f9dd642ad8b255a1d5b525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserSound: {fileID: 1524910537099220, guid: e990e91ecf7fc8642863ffe6a62da944, type: 2}
 --- !u!1 &828067329
 GameObject:
   m_ObjectHideFlags: 0
