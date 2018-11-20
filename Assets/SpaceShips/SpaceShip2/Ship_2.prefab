@@ -29,7 +29,6 @@ GameObject:
   - component: {fileID: 65293365874087192}
   - component: {fileID: 114384408757187156}
   - component: {fileID: 114369211149275780}
-  - component: {fileID: 114721046953965794}
   m_Layer: 0
   m_Name: Ship_2
   m_TagString: Enemy
@@ -155,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35c519eec04d64bb860b58ca281dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageDealt: 2
 --- !u!114 &114384408757187156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,14 +169,3 @@ MonoBehaviour:
   randRange: 20
   minSize: 0.5
   maxSize: 0.7
---- !u!114 &114721046953965794
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de35c519eec04d64bb860b58ca281dbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
