@@ -10,7 +10,7 @@ public class MultiplierIncreaseHandler : PowerupHandler
 
 	void Start()
 	{
-		GameObject multiplierCountObject = GameObject.FindWithTag("Multiplier");
+		GameObject multiplierCountObject = GameObject.FindWithTag("GameController");
 		multiplierCount = multiplierCountObject.GetComponent<MultiplierCounter> ();
 	}
 

@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Enemy
   - despawner
-  - Score
-  - Multiplier
+  - Plasma
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
 
 	void Start ()
 	{
-		Cursor.visible = false;
+		
 	}
 	
 	void Update ()
@@ -53,9 +53,5 @@ public class Movement : MonoBehaviour
 		{
 			transform.Translate(0, 0, -0.1f);
 		}
-		
-		
 	}
-
-	
 }

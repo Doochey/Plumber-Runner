@@ -10,7 +10,7 @@ public class BonusPointsHandler : PowerupHandler
 
 	void Start()
 	{
-		GameObject scoreCountObject = GameObject.FindWithTag("Score");
+		GameObject scoreCountObject = GameObject.FindWithTag("GameController");
 		scoreCount = scoreCountObject.GetComponent<ScoreCounter> ();
 	}
 

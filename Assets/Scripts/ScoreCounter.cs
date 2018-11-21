@@ -5,19 +5,15 @@ using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
-	public Text scoreText;
 	public GameObject player;
-	public GameObject multiplierObject;
+	public MultiplierCounter multiplier;
 	public int startingScore;
 
 	private int scoreCount;
-	private MultiplierCounter multiplier;
 
 	void Start ()
 	{
 		scoreCount = startingScore;
-		multiplier = multiplierObject.GetComponent<MultiplierCounter>();
-		scoreText.text = "SCORE: " + scoreCount.ToString();
 	}
 
 	void Update ()
@@ -25,7 +21,6 @@ public class ScoreCounter : MonoBehaviour
 		if (player != null)
 		{
 			scoreCount += (int) (100 * Time.deltaTime) * multiplier.GetMultiplier();
-			scoreText.text = "SCORE: " + scoreCount.ToString();
 		}
 	}
 

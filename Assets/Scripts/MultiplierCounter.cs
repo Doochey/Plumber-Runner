@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class MultiplierCounter : MonoBehaviour
 {
-	public Text multiplierText;
 	public GameObject player;
 	public int startingMultiplier;
 
@@ -14,15 +13,6 @@ public class MultiplierCounter : MonoBehaviour
 	void Start ()
 	{
 		multiplierCount = startingMultiplier;
-		multiplierText.text = "MULTIPLIER: " + multiplierCount.ToString();
-	}
-
-	void Update ()
-	{
-		if (player != null)
-		{
-			multiplierText.text = "MULTIPLIER: " + multiplierCount.ToString() + "x";
-		}
 	}
 
 	public void increaseMultiplier(int increase)
