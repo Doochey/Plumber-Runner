@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - despawner
   - Plasma
+  - Counter
   layers:
   - Default
   - TransparentFX

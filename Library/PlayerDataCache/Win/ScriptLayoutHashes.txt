@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-D:/Ollie/Documents/GitHub/Plumber-Runner/Builds/Demo/Tunnel Test.exe
+D:/Unity/Projects/DumbDumb/Builds/5_30_22_11_2018/Tunnel Test.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Blue Lagoon Nebula.unity
@@ -113,7 +113,7 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.MoveAnimController
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Movement
 68203a2d90186aa6245d3bc6e3f65b52 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectActivator
-3f908f2136129e0706e41afe15076a35 Assembly-CSharp.dll:.LoadSceneOnClick
+723203d3edb068912c12423acdaf33af Assembly-CSharp.dll:.LoadSceneOnClick
 094bb436115697af3c33f00b12d9df91 Assembly-CSharp.dll:.GameController
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9e61f3535f3c55760a1cedfbd114f4af UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -295,3 +295,4 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 55a790f4ba70fcc997e8d8c1c99fa46f Assembly-CSharp.dll:.MultiplierCounter
 36ed8d92a07a53bf383bc90e377cc388 Assembly-CSharp-firstpass.dll:UnityStandardAssets._2D.PlatformerCharacter2D
 695c9335429d4798b6f74ca73c042ff4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+63b421be21e011f0a31409fe2ff6c1e9 Assembly-CSharp.dll:.Pause
