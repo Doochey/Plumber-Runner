@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlasmaCollision : MonoBehaviour {
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collider)
     {
         Destroy(gameObject);
 
-        if (collision.gameObject.tag == "Comet")
+        if (collider.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            Destroy(collider.gameObject);
         }
     }
 }

@@ -14,7 +14,8 @@ public class ShootLaserScript : MonoBehaviour {
     private float myTime = 0.0F;
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         myTime = myTime + Time.deltaTime;
 
         if (Input.GetKey(KeyCode.Mouse0) && myTime > nextFire)
@@ -34,7 +35,7 @@ public class ShootLaserScript : MonoBehaviour {
             laserBeam.GetComponent<Rigidbody>().velocity = laserBeam.transform.forward * 6;
 
             // Destroy the bullet after 2 seconds
-            Destroy(laserBeam, 3.0f);
+            Destroy(laserBeam, 10.0f);
 
             nextFire = nextFire - myTime;
             myTime = 0.0F;

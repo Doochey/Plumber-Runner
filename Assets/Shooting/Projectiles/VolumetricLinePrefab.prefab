@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114326655957792542}
   - component: {fileID: 54562332427098144}
   - component: {fileID: 135346656642966892}
-  - component: {fileID: 114845248574880490}
+  - component: {fileID: 114731038691941580}
   m_Layer: 0
   m_Name: VolumetricLinePrefab
   m_TagString: Laser
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_lineColor: {r: 0, g: 1, b: 1, a: 1}
   m_lineWidth: 60
   m_lightSaberFactor: 0.8
---- !u!114 &114845248574880490
+--- !u!114 &114731038691941580
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783872800064038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60311e575c5c19641b82efcdc8d857fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bcac9dbfb1a1424b967f1b5cc035ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135346656642966892

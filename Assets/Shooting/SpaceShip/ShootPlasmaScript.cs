@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootPlasmaScript : MonoBehaviour {
+
     public GameObject plasmaPrefab;
     public Transform plasmaSpawn;
 
@@ -34,7 +35,7 @@ public class ShootPlasmaScript : MonoBehaviour {
             plasmaBall.GetComponent<Rigidbody>().velocity = plasmaBall.transform.forward * 6;
 
             // Destroy the bullet after 2 seconds
-            Destroy(plasmaBall, 3.0f);
+            Destroy(plasmaBall, 10.0f);
 
             nextFire = nextFire - myTime;
             myTime = 0.0F;
