@@ -9,9 +9,10 @@ public class ShootLaserScript : MonoBehaviour {
 
     public GameObject laserSound;
 
-    public float fireDelta = 0.5F;
+    public float fireRate = 0.5F;
     private float nextFire = 0.5F;
     private float myTime = 0.0F;
+    public float spead = 10;
 
     // Update is called once per frame
     void Update()
@@ -23,7 +24,7 @@ public class ShootLaserScript : MonoBehaviour {
             // Make laser sound
             GameObject makeSound = Instantiate(laserSound, this.transform.position, this.transform.rotation) as GameObject;
 
-            nextFire = myTime + fireDelta;
+            nextFire = myTime + fireRate;
 
             // Create the laser beam
             GameObject laserBeam = Instantiate(
@@ -32,9 +33,9 @@ public class ShootLaserScript : MonoBehaviour {
                     laserSpawn.rotation);
 
             // Add velocity to the bullet
-            laserBeam.GetComponent<Rigidbody>().velocity = laserBeam.transform.forward * 6;
+            laserBeam.GetComponent<Rigidbody>().velocity = laserBeam.transform.forward * 10;
 
-            // Destroy the bullet after 2 seconds
+            // Destroy the bullet after x seconds
             Destroy(laserBeam, 10.0f);
 
             nextFire = nextFire - myTime;

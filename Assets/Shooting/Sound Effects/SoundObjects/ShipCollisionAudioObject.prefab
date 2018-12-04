@@ -7,51 +7,50 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
-    m_RemovedComponents:
-    - {fileID: 0}
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1524910537099220}
-  m_IsPrefabParent: 0
---- !u!1 &1524910537099220
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1726707498881810}
+  m_IsPrefabAsset: 1
+--- !u!1 &1726707498881810
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
-  - component: {fileID: 4639347421608524}
-  - component: {fileID: 82991979717485780}
-  - component: {fileID: 114353071632931746}
+  - component: {fileID: 4905102675169422}
+  - component: {fileID: 82630638171760374}
+  - component: {fileID: 114791625378638108}
   m_Layer: 0
-  m_Name: PlasmaShotObject
+  m_Name: ShipCollisionAudioObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4639347421608524
+--- !u!4 &4905102675169422
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1524910537099220}
+  m_GameObject: {fileID: 1726707498881810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.831907, y: -3.7498972, z: -9.663946}
+  m_LocalPosition: {x: -1.0864494, y: -0.39309764, z: -2.9444683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82991979717485780
+--- !u!82 &82630638171760374
 AudioSource:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1524910537099220}
+  m_GameObject: {fileID: 1726707498881810}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2d93d65173f83f842a6854d04060231e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a6b9fe185a1239346a0cfd37c93aeee9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -137,12 +136,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114353071632931746
+--- !u!114 &114791625378638108
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1524910537099220}
+  m_GameObject: {fileID: 1726707498881810}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36fdfa738414cc448a959cde096c19fb, type: 3}

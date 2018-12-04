@@ -9,9 +9,10 @@ public class ShootPlasmaScript : MonoBehaviour {
 
     public GameObject plasmaSound;
 
-    public float fireDelta = 0.5F;
+    public float fireRate = 0.5F;
     private float nextFire = 0.5F;
     private float myTime = 0.0F;
+    public float speed = 10;
 
     // Update is called once per frame
     void Update()
@@ -23,7 +24,7 @@ public class ShootPlasmaScript : MonoBehaviour {
             // Make plasma sound
             GameObject makeSound = Instantiate(plasmaSound, this.transform.position, this.transform.rotation) as GameObject;
 
-            nextFire = myTime + fireDelta;
+            nextFire = myTime + fireRate;
 
             // Create the laser beam
             GameObject plasmaBall = Instantiate(
@@ -32,9 +33,9 @@ public class ShootPlasmaScript : MonoBehaviour {
                     plasmaSpawn.rotation);
 
             // Add velocity to the bullet
-            plasmaBall.GetComponent<Rigidbody>().velocity = plasmaBall.transform.forward * 6;
+            plasmaBall.GetComponent<Rigidbody>().velocity = plasmaBall.transform.forward * speed;
 
-            // Destroy the bullet after 2 seconds
+            // Destroy the bullet after x seconds
             Destroy(plasmaBall, 10.0f);
 
             nextFire = nextFire - myTime;

@@ -154,11 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5075c17a350cdc8498a0b6e4938f610f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 1472142116915092, guid: d5f94c99ddad06d49a12de8ccb795b12,
+  laserPrefab: {fileID: 1783872800064038, guid: cc8cc5b574f7dad4397b959c6996626b,
     type: 2}
   laserSpawn: {fileID: 4264928630377042}
   laserSound: {fileID: 1163224434748488, guid: cc3562036d20c3c459c8bbaf366bb2f7, type: 2}
-  fireDelta: 0.5
+  fireRate: 0.5
 --- !u!114 &114712904815612508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,9 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8afe31037df83d449ccebcb80602201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plasmaPrefab: {fileID: 1472142116915092, guid: d5f94c99ddad06d49a12de8ccb795b12,
+  plasmaPrefab: {fileID: 1002574685025162, guid: 8bd31515f994d4e469badaf08cd15027,
     type: 2}
   plasmaSpawn: {fileID: 4784964540557040}
   plasmaSound: {fileID: 1524910537099220, guid: e990e91ecf7fc8642863ffe6a62da944,
     type: 2}
-  fireDelta: 1
+  fireRate: 0.5

@@ -6,15 +6,17 @@ using UnityEngine;
 public class ObstacleCollision : MonoBehaviour
 {
 	public int damageDealt;
+    public GameObject collisionSound;
 
-	void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
 	{
-		if ( other.gameObject.CompareTag("Player"))
+        if ( other.gameObject.CompareTag("Player"))
 		{
-			
-			
-			//play particle explosion
-			var exp = other.gameObject.GetComponent<ParticleSystem>();
+            // Play the explosion sound
+            GameObject makeSound = Instantiate(collisionSound, this.transform.position, this.transform.rotation) as GameObject;
+
+            //play particle explosion
+            var exp = other.gameObject.GetComponent<ParticleSystem>();
 			exp.Play();
 
 			//inflict damage to player

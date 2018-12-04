@@ -105,13 +105,11 @@
     <Compile Include="Assets\Shooting\Asset Packs\VolumetricLines\Scripts\VolumetricLineVertexData.cs" />
     <Compile Include="Assets\Shooting\Asset Packs\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
     <Compile Include="Assets\Shooting\Asset Packs\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
-    <Compile Include="Assets\Shooting\Obstacles\CometCollision.cs" />
-    <Compile Include="Assets\Shooting\Obstacles\EnemyCollision.cs" />
     <Compile Include="Assets\Shooting\Projectiles\LaserCollision.cs" />
     <Compile Include="Assets\Shooting\Projectiles\PlasmaCollision.cs" />
-    <Compile Include="Assets\Shooting\SFX\MakeSoundScript.cs" />
-    <Compile Include="Assets\Shooting\SpaceShip\ShootLaserScript.cs" />
-    <Compile Include="Assets\Shooting\SpaceShip\ShootPlasmaScript.cs" />
+    <Compile Include="Assets\Shooting\Shoot Scripts for Spaceship\ShootLaserScript.cs" />
+    <Compile Include="Assets\Shooting\Shoot Scripts for Spaceship\ShootPlasmaScript.cs" />
+    <Compile Include="Assets\Shooting\Sound Effects\MakeSoundScript.cs" />
     <None Include="Assets\Shooting\Asset Packs\VolumetricLines\Shaders\_StripShader.cginc" />
     <None Include="Assets\Shooting\Asset Packs\VolumetricLines\Shaders\Additive.shader" />
     <None Include="Assets\Shooting\Asset Packs\VolumetricLines\Shaders\AlphaBlended.shader" />
