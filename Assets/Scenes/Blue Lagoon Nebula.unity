@@ -564,7 +564,8 @@ MonoBehaviour:
   plasmaSpawn: {fileID: 1181240668}
   plasmaSound: {fileID: 1524910537099220, guid: e990e91ecf7fc8642863ffe6a62da944,
     type: 2}
-  fireDelta: 0.5
+  fireRate: 0.5
+  speed: 10
 --- !u!114 &420304628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +581,8 @@ MonoBehaviour:
     type: 2}
   laserSpawn: {fileID: 60618906}
   laserSound: {fileID: 1163224434748488, guid: cc3562036d20c3c459c8bbaf366bb2f7, type: 2}
-  fireDelta: 0.5
+  fireRate: 0.5
+  spead: 10
 --- !u!114 &420304629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,6 +600,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4151268724041448, guid: d00aeee92f586854f98b0de1e30fca5a,
     type: 2}
   m_PrefabInternal: {fileID: 126512197}
+--- !u!108 &420304637
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420304626}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.92417854, b: 0.042452812, a: 1}
+  m_Intensity: 5
+  m_Range: 4
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &535663758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2079,7 @@ GameObject:
   - component: {fileID: 1718540630}
   - component: {fileID: 1718540629}
   - component: {fileID: 1718540628}
+  - component: {fileID: 1718540632}
   m_Layer: 5
   m_Name: Game Controller
   m_TagString: GameController
@@ -2145,6 +2185,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 420304626}
   startingDistance: 0
+--- !u!114 &1718540632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718540624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c4e33fbcc2c26438bc127e846dae78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 420304626}
+  gracePeriod: 1
 --- !u!1 &1722759038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,6 +2522,7 @@ MonoBehaviour:
   powerupPrefabs:
   - {fileID: 54347663160046744, guid: 5c02591794acece409986647ed6329a7, type: 2}
   - {fileID: 54004743754651468, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 2}
+  - {fileID: 54920019926308470, guid: 8f226a393243a0141bace5fd6b60bafa, type: 2}
 --- !u!1 &2021526613
 GameObject:
   m_ObjectHideFlags: 0
