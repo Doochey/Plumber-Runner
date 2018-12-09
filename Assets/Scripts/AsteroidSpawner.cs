@@ -47,5 +47,10 @@ public class AsteroidSpawner : MonoBehaviour
 		}
 	}
 
+	public void decreaseAspawned(int x)
+	{
+		aSpawned -= x;
+	}
+
 	
 }

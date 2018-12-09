@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8210ef39816e9b24e8c083a9516ffc26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randRange: 20
+  randRange: 15
   minSize: 1
   maxSize: 1
 --- !u!114 &114698844329496208

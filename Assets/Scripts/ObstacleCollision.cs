@@ -44,6 +44,17 @@ public class ObstacleCollision : MonoBehaviour
 			//otherwise destroy obstacle
 			else
 			{
+				if (gameObject.tag.Equals("Asteroid"))
+				{
+					// Decrease aSpawned Counter
+					GameObject asteroidSpawner = GameObject.FindWithTag("ASpawner");
+					asteroidSpawner.GetComponent<AsteroidSpawner>().decreaseAspawned(1);
+				} else if (gameObject.tag.Equals("Enemy"))
+				{
+					// Decrease eSpawned Counter
+					GameObject enemySpawner = GameObject.FindWithTag("ESpawner");
+					enemySpawner.GetComponent<EnemySpawner>().decreaseEspawned(1);
+				}
 				Destroy (this.gameObject);
 			}
 		}

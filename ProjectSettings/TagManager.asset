@@ -9,6 +9,8 @@ TagManager:
   - Plasma
   - Counter
   - Asteroid
+  - ASpawner
+  - ESpawner
   layers:
   - Default
   - TransparentFX

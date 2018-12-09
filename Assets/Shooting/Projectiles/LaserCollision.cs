@@ -23,6 +23,10 @@ public class LaserCollision : MonoBehaviour {
 
             // Destroy the asteroid
             Destroy(collider.gameObject);
+
+            // Decrease aSpawned Counter
+            GameObject asteroidSpawner = GameObject.FindWithTag("ASpawner");
+            asteroidSpawner.GetComponent<AsteroidSpawner>().decreaseAspawned(1);
         }
     }
 }

@@ -23,6 +23,10 @@ public class PlasmaCollision : MonoBehaviour {
 
             // Destroy the enemy spaceship
             Destroy(collider.gameObject);
+            
+            // Decrease eSpawned Counter
+            GameObject enemySpawner = GameObject.FindWithTag("ESpawner");
+            enemySpawner.GetComponent<EnemySpawner>().decreaseEspawned(1);
         }
     }
 }

@@ -46,6 +46,11 @@ public class EnemySpawner : MonoBehaviour {
 			eSpawned++;
 		}
 	}
+	
+	public void decreaseEspawned(int x)
+	{
+		eSpawned -= x;
+	}
 
 	
 }
