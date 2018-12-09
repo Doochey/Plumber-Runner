@@ -140,29 +140,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63726970ca9cd248be479e7a6dd5db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnNumber: 5
+  enemySpawnNumber: 10
   minSpeed: 10
   maxSpeed: 20
-  randomSpawnRange: 20
+  randomSpawnRange: 10
   ySpawnOrigin: 1
   xSpawnOrigin: 0
   zSpawnOrigin: 138
   spacehipPrefabs:
-  - {fileID: 54777603129918770, guid: c9816fa979b06ba4e9c222b529370cc2, type: 2}
-  - {fileID: 54004421868353836, guid: c8b6a28265cff5e4cb4355af1a24cfba, type: 2}
+  - {fileID: 54105095912484126, guid: 0ae7935ff095b9d4983b19563a57760a, type: 2}
 --- !u!4 &3983270
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3983267}
-  m_LocalRotation: {x: 0.021631561, y: -0.7067759, z: 0.7067759, w: 0.021631561}
-  m_LocalPosition: {x: 0, y: 1.27, z: 138.87}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 1.2, z: 139.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 176.494}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
 --- !u!1 &49484152
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +207,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 49484152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -73.3, y: 11.93, z: -13.669998}
+  m_LocalPosition: {x: -73.3, y: 24.5, z: -13.669998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 630408806}
@@ -237,13 +236,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 60618905}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.61600006, y: 0.38, z: 2.582}
+  m_LocalRotation: {x: -0.0129113, y: 0.0002086037, z: -0.007805603, w: 0.99988616}
+  m_LocalPosition: {x: -0.002, y: -0.16, z: 3.148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420304636}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.4790001, y: 0.035, z: -0.89500004}
 --- !u!1 &79356049
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4151268724041448, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.5569117
+      value: 4.23
       objectReference: {fileID: 0}
     - target: {fileID: 4151268724041448, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -356,11 +355,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4151268724041448, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1681818292923228, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
       propertyPath: m_Name
       value: Player Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.029
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
@@ -559,12 +570,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8afe31037df83d449ccebcb80602201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plasmaPrefab: {fileID: 1472142116915092, guid: d5f94c99ddad06d49a12de8ccb795b12,
+  plasmaPrefab: {fileID: 1002574685025162, guid: 8bd31515f994d4e469badaf08cd15027,
     type: 2}
   plasmaSpawn: {fileID: 1181240668}
   plasmaSound: {fileID: 1524910537099220, guid: e990e91ecf7fc8642863ffe6a62da944,
     type: 2}
-  fireDelta: 0.5
+  fireRate: 0.5
+  speed: 10
 --- !u!114 &420304628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +592,8 @@ MonoBehaviour:
     type: 2}
   laserSpawn: {fileID: 60618906}
   laserSound: {fileID: 1163224434748488, guid: cc3562036d20c3c459c8bbaf366bb2f7, type: 2}
-  fireDelta: 0.5
+  fireRate: 0.5
+  spead: 10
 --- !u!114 &420304629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,7 +858,7 @@ Transform:
   m_LocalScale: {x: 169.03137, y: 1, z: 133.80986}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 87.990005, y: 164.119, z: 163.67401}
 --- !u!64 &588175677
 MeshCollider:
@@ -1336,13 +1349,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1181240667}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.61600006, y: 0.38, z: 2.582}
+  m_LocalRotation: {x: -0.0129113, y: 0.0002086037, z: -0.007805603, w: 0.99988616}
+  m_LocalPosition: {x: -0.012, y: -0.16, z: 3.148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420304636}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.4790001, y: 0.035, z: -0.89500004}
 --- !u!1001 &1245750588
 Prefab:
   m_ObjectHideFlags: 0
@@ -1729,7 +1742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1367425011}
   m_LocalRotation: {x: 0.059566863, y: -0, z: -0, w: 0.9982243}
-  m_LocalPosition: {x: 0, y: 3.85, z: -13.07}
+  m_LocalPosition: {x: 0, y: 4.13, z: -5.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2265,7 +2278,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777877343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.8, y: 0, z: -13.469994}
+  m_LocalPosition: {x: 57.7, y: -11.2, z: -13.469994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 630408806}
@@ -2446,7 +2459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180}
 --- !u!114 &1922437408
 MonoBehaviour:

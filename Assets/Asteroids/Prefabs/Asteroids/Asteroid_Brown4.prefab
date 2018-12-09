@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 135808904724535474}
   - component: {fileID: 114122469845350044}
   - component: {fileID: 114720524586919260}
+  - component: {fileID: 114893753816519208}
   m_Layer: 0
   m_Name: Asteroid_Brown4
   m_TagString: Asteroid
@@ -144,6 +145,24 @@ MonoBehaviour:
   damageDealt: 1
   collisionSound: {fileID: 1726707498881810, guid: 9ddbe6385c95b5e41a56105c7681c164,
     type: 2}
+--- !u!114 &114893753816519208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472201750502146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde713dd128cd734da0f5e21953b4db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroids:
+  - {fileID: 54692080000496830, guid: 3651dddd1f0a81648818a345eb7b0ca2, type: 2}
+  - {fileID: 54439739919534170, guid: ab43b9240c8fa1b41b811ca2b8b94854, type: 2}
+  - {fileID: 54643816459724708, guid: f342d03f05dc72c44bf26c94bc4c8462, type: 2}
+  - {fileID: 54507138890261632, guid: c0229638a0e9a034591c04dddebf2e59, type: 2}
+  speed: 1
+  scale: 0.8
 --- !u!135 &135808904724535474
 SphereCollider:
   m_ObjectHideFlags: 1
