@@ -7,7 +7,8 @@ public class ObstacleCollision : MonoBehaviour
 {
 	public int damageDealt;
     public GameObject collisionSound;
-	public GameObject gameController;
+
+	private GameObject gameController;
 
 	private void Start()
 	{
