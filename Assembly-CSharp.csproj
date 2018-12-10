@@ -54,9 +54,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
-     <Compile Include="Assets\HealthUpHandler.cs" />
+     <Compile Include="Assets\FireRateHandler.cs" />
      <Compile Include="Assets\Powerups\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\Powerups\Scripts\BonusPointsHandler.cs" />
+     <Compile Include="Assets\Powerups\Scripts\HealthUpHandler.cs" />
      <Compile Include="Assets\Powerups\Scripts\InvincibilityHandler.cs" />
      <Compile Include="Assets\Powerups\Scripts\MultiplierIncreaseHandler.cs" />
      <Compile Include="Assets\Powerups\Scripts\PowerupHandler.cs" />

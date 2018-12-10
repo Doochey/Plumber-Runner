@@ -362,6 +362,56 @@ Prefab:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 108801881662473992, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108801881662473992, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510003265913686, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
   m_IsPrefabAsset: 0
