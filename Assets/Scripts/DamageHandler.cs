@@ -30,6 +30,19 @@ public class DamageHandler : MonoBehaviour
 		}
 	}
 
+	//heal by amount healAmount, up to max of startingHealth
+	public void heal(int healAmount)
+	{
+		if (healthCount + healAmount >= startingHealth)
+		{
+			healthCount = startingHealth;
+		}
+		else
+		{
+			healthCount += healAmount;
+		}
+	}
+
 	//apply invincibility, refreshing coroutine if necessary
 	public void TurnInvincible(int invincibilityTime)
 	{

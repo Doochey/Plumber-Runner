@@ -1,15 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DamageHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shooting\Shoot Scripts for Spaceship\ShootLaserScript.cs">
     <Files>
-      <File FileName="Assets\Powerups\Scripts\InvincibilityHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Powerups\Scripts\InvincibilityHandler.cs" Line="18" Column="3" />
       <File FileName="Assets\Powerups\Scripts\PowerupHandler.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ObstacleCollision.cs" Line="31" Column="41" />
+      <File FileName="Assets\Scripts\ObstacleCollision.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PowerupCollision.cs" Line="1" Column="1" />
       <File FileName="Assets\Powerups\Scripts\BonusPointsHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets\HealthUpHandler.cs" Line="11" Column="3" />
-      <File FileName="Assets\Scripts\DamageHandler.cs" Line="41" Column="36" />
+      <File FileName="Assets\HealthUpHandler.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\DamageHandler.cs" Line="42" Column="30" />
+      <File FileName="Assets\Shooting\Shoot Scripts for Spaceship\ShootLaserScript.cs" Line="25" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
