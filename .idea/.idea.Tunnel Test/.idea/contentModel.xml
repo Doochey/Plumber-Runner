@@ -16,7 +16,6 @@
             </e>
           </e>
         </e>
-        <e p="asteroidWrongShotMultiplier.cs" t="Include" />
         <e p="Fonts" t="Include">
           <e p="Jupiter" t="Include">
             <e p="LICENSE.txt" t="Include" />
@@ -64,6 +63,7 @@
             <e p="MoveAnimController.cs" t="Include" />
           </e>
           <e p="AsteroidSpawner.cs" t="Include" />
+          <e p="asteroidWrongShotMultiplier.cs" t="Include" />
           <e p="DistanceCounter.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="GameController.cs" t="Include" />

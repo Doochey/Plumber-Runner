@@ -58,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
-    <Compile Include="Assets\asteroidWrongShotMultiplier.cs" />
     <Compile Include="Assets\Powerups\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Powerups\Scripts\BonusPointsHandler.cs" />
     <Compile Include="Assets\Powerups\Scripts\MultiplierIncreaseHandler.cs" />
@@ -73,6 +72,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\AnimationControllers\MoveAnimController.cs" />
     <Compile Include="Assets\Scripts\AsteroidSpawner.cs" />
+    <Compile Include="Assets\Scripts\asteroidWrongShotMultiplier.cs" />
     <Compile Include="Assets\Scripts\DistanceCounter.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />

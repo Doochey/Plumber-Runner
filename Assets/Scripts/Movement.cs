@@ -42,16 +42,24 @@ public class Movement : MonoBehaviour
 			float vs = VerticalSpeed * Input.GetAxis("Mouse Y");
 			transform.Translate(hs, vs, 0);
 		}
-
+		#if UNITY_EDITOR
+			if (Input.GetKey(KeyCode.LeftShift))
+				{
+					transform.Translate(0, 0, 0.1f);
+				}
+				if (Input.GetKey(KeyCode.LeftControl))
+				{
+					transform.Translate(0, 0, -0.1f);
+				}
+				if (Input.GetKey(KeyCode.Alpha1))
+				{
+					GameObject player = GameObject.FindWithTag("Player");
+					Destroy(player);
+				}
+		#endif
 		 
-		if (Input.GetKey(KeyCode.LeftShift))
-		{
-			transform.Translate(0, 0, 0.1f);
-		}
 		
-		if (Input.GetKey(KeyCode.LeftControl))
-		{
-			transform.Translate(0, 0, -0.1f);
-		}
+		
+		
 	}
 }
