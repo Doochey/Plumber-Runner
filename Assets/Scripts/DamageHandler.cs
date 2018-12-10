@@ -7,27 +7,38 @@ public class DamageHandler : MonoBehaviour
 {
 	public GameObject player;
 	public int gracePeriod;
+	public int startingHealth;
 
+	private int healthCount;
 	private bool invincible;
+	private IEnumerator invincibilityInst;
 
 	void Start ()
 	{
-		invincible = false;		
+		invincible = false;
+		healthCount = startingHealth;
 	}
 
-	public bool isInvincible()
+	//apply damage and grace period, only if not currently invincible
+	public void takeDamage(int damage)
 	{
-		return invincible;
+		if (!invincible)
+		{
+			healthCount -= damage;
+			invincibilityInst = Invincibility (gracePeriod);
+			StartCoroutine (invincibilityInst);
+		}
 	}
 
-	public void damageTaken()
-	{
-		StartCoroutine (Invincibility (gracePeriod));
-	}
-
+	//apply invincibility, refreshing coroutine if necessary
 	public void TurnInvincible(int invincibilityTime)
 	{
-		StartCoroutine (Invincibility (invincibilityTime));
+		if (invincible)
+		{
+			StopCoroutine (invincibilityInst);
+		}
+		invincibilityInst = Invincibility (invincibilityTime);
+		StartCoroutine (invincibilityInst);
 	}
 
 	//coroutine to keep invincible true for a set amount of seconds
@@ -38,5 +49,20 @@ public class DamageHandler : MonoBehaviour
 		yield return new WaitForSeconds (invincibilityTime);
 		player.GetComponent<Light> ().enabled = false;
 		invincible = false;
+	}
+
+	public bool isInvincible()
+	{
+		return invincible;
+	}
+
+	public int getHealth()
+	{
+		return healthCount;
+	}
+
+	public int getMaxHealth()
+	{
+		return startingHealth;
 	}
 }

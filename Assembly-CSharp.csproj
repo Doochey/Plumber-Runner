@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
+     <Compile Include="Assets\HealthUpHandler.cs" />
      <Compile Include="Assets\Powerups\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\Powerups\Scripts\BonusPointsHandler.cs" />
      <Compile Include="Assets\Powerups\Scripts\InvincibilityHandler.cs" />
@@ -87,7 +88,6 @@
      <Compile Include="Assets\Scripts\ResetSpawn.cs" />
      <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\ScoreCounter.cs" />
-     <Compile Include="Assets\Scripts\ShipHealth.cs" />
      <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Shooting\Asset Packs\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
      <Compile Include="Assets\Shooting\Asset Packs\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />

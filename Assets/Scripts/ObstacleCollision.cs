@@ -28,19 +28,14 @@ public class ObstacleCollision : MonoBehaviour
             var exp = player.GetComponent<ParticleSystem>();
 			exp.Play();
 
-			//inflict damage to player if they're not invincible, and start grace period
-			if (!gameController.GetComponent<DamageHandler>().isInvincible ())
-			{
-				player.GetComponent<ShipHealth>().takeDamage (damageDealt);
-				gameController.GetComponent<DamageHandler> ().damageTaken();
-			}
+			//attempt to inflict damage to player
+			gameController.GetComponent<DamageHandler> ().takeDamage(damageDealt);
 
 			//if player has no health left, destroy it
-			if (player.GetComponent<ShipHealth>().getHealth () <= 0)
+			if (gameController.GetComponent<DamageHandler>().getHealth () <= 0)
 			{
 				// Disables player movement
 				player.GetComponent<Movement>().enabled = false;
-				
 			
 				// Disables mesh renderer of player object making them invisible
 				Renderer rend = player.GetComponent<Renderer>();

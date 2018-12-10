@@ -5,19 +5,16 @@ using UnityEngine.UI;
 
 public class HealthBarController : MonoBehaviour
 {
-	public GameObject player;
+	public GameObject gameController;
 	public Slider healthBarSlider;
 
 	void Start ()
 	{
-		healthBarSlider.maxValue = player.GetComponent<ShipHealth> ().getMaxHealth ();
+		healthBarSlider.maxValue = gameController.GetComponent<DamageHandler> ().getMaxHealth ();
 	}
 
 	void Update()
 	{
-		if (player != null)
-		{
-			healthBarSlider.value = player.GetComponent<ShipHealth> ().getHealth ();
-		}
+		healthBarSlider.value = gameController.GetComponent<DamageHandler> ().getHealth ();
 	}
 }
