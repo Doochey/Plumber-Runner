@@ -16,15 +16,11 @@
             </e>
           </e>
         </e>
-        <e p="ChangeSpeed.cs" t="Include" />
-        <e p="ClearUpgradeData.cs" t="Include" />
         <e p="Fonts" t="Include">
           <e p="Jupiter" t="Include">
             <e p="LICENSE.txt" t="Include" />
           </e>
         </e>
-        <e p="incdecText.cs" t="Include" />
-        <e p="loadUpgradeMenu.cs" t="Include" />
         <e p="Materials" t="Include">
           <e p="UI-Default-No-Alpha.shader" t="Include" />
         </e>
@@ -68,12 +64,16 @@
           </e>
           <e p="AsteroidSpawner.cs" t="Include" />
           <e p="asteroidWrongShotMultiplier.cs" t="Include" />
+          <e p="ChangeSpeed.cs" t="Include" />
+          <e p="ClearUpgradeData.cs" t="Include" />
           <e p="DistanceCounter.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="HealthBarController.cs" t="Include" />
           <e p="HighscoreHandler.cs" t="Include" />
+          <e p="incdecText.cs" t="Include" />
           <e p="LoadSceneOnClick.cs" t="Include" />
+          <e p="loadUpgradeMenu.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="MultiplierCounter.cs" t="Include" />
           <e p="ObstacleCollision.cs" t="Include" />
@@ -87,6 +87,7 @@
           <e p="ScoreCounter.cs" t="Include" />
           <e p="ShipHealth.cs" t="Include" />
           <e p="ShowSliderValue.cs" t="Include" />
+          <e p="UpgradeHandler.cs" t="Include" />
         </e>
         <e p="Shooting" t="Include">
           <e p="Asset Packs" t="Include">
@@ -128,14 +129,8 @@
             </e>
           </e>
           <e p="Projectiles" t="Include">
-            <e p="LaserCollision.cs" t="Include" />
-            <e p="PlasmaCollision.cs" t="Include" />
             <e p="ProjectileCollisionScript.cs" t="Include" />
             <e p="ShootScript.cs" t="Include" />
-          </e>
-          <e p="Shoot Scripts for Spaceship" t="Include">
-            <e p="ShootLaserScript.cs" t="Include" />
-            <e p="ShootPlasmaScript.cs" t="Include" />
           </e>
           <e p="Sound Effects" t="Include">
             <e p="MakeSoundScript.cs" t="Include" />
@@ -390,7 +385,6 @@
             </e>
           </e>
         </e>
-        <e p="UpgradeHandler.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

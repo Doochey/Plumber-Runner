@@ -28,23 +28,27 @@ public class ShootScript : MonoBehaviour {
     }
     void Fire(GameObject beam, GameObject sound)
     {
-        // Make laser sound
-        GameObject makeSound = Instantiate(sound, this.transform.position, this.transform.rotation) as GameObject;
+        if (GameObject.FindWithTag("Player").GetComponent<Renderer>().enabled)
+        {
+            // Make laser sound
+            GameObject makeSound = Instantiate(sound, this.transform.position, this.transform.rotation) as GameObject;
 
         
-        nextFire = myTime + fireRate;
+            nextFire = myTime + fireRate;
 
-        // Create the laser beam
-        GameObject newBeam = Instantiate(beam, beamSpawn.position, beamSpawn.rotation);
+            // Create the laser beam
+            GameObject newBeam = Instantiate(beam, beamSpawn.position, beamSpawn.rotation);
 
-        // Add velocity to the bullet
-        newBeam.GetComponent<Rigidbody>().velocity = newBeam.transform.forward * speed;
+            // Add velocity to the bullet
+            newBeam.GetComponent<Rigidbody>().velocity = newBeam.transform.forward * speed;
 
-        // Destroy the bullet after x seconds
-        Destroy(newBeam, lifetime);
+            // Destroy the bullet after x seconds
+            Destroy(newBeam, lifetime);
 
-        nextFire = nextFire - myTime;
-        myTime = 0.0F;
+            nextFire = nextFire - myTime;
+            myTime = 0.0F;
+        }
+        
     }
 
     // Update is called once per frame

@@ -50,6 +50,7 @@ public class UpgradeHandler : MonoBehaviour {
 			}
 			else
 			{
+				
 				upgradePoints.text = "UPGRADE POINTS: " + currentPoints;
 			}
 		}

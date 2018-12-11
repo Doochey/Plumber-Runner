@@ -10,7 +10,7 @@ public class ObstacleCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
 	{
-        if ( other.gameObject.CompareTag("Player"))
+        if ( other.gameObject.CompareTag("Player") && GameObject.FindWithTag("Player").GetComponent<Renderer>().enabled)
 		{
             // Play the explosion sound
             GameObject makeSound = Instantiate(collisionSound, this.transform.position, this.transform.rotation) as GameObject;
@@ -39,6 +39,7 @@ public class ObstacleCollision : MonoBehaviour
 					child.gameObject.SetActive(false);
 				}
 				
+				
 				Destroy(other.gameObject, exp.main.duration);
 			}
 			//otherwise destroy obstacle
@@ -60,4 +61,5 @@ public class ObstacleCollision : MonoBehaviour
 		}
 
 	}
+
 }
