@@ -55,6 +55,5 @@ public class ObstacleCollision : MonoBehaviour
 				Destroy (this.gameObject);
 			}
 		}
-
 	}
 }

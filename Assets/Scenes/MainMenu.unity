@@ -1413,7 +1413,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1423,18 +1423,34 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
+    m_LineSpacing: 0.5
   m_Text: 'Fly your ship through the Blue Lagoon Nebula but watch out for asteroids
-    and enemy ships
+    and enemy ships!
 
 
-    Move Up,Left,Down and Right with the mouse, OR W,A,S,D, OR Arrow Keys
+    Controls:
+
+    Move Up, Left, Down, and Right with the Mouse, W A S D, or Arrow Keys.
+
+    Shoot lasers with left mouse (for asteroids) and plasma with right mouse (for
+    ships).
 
 
-    Shoot with left (For asteroids) and right (For ships) mouse clicks
+    Collect powerups aid in your mission!
 
+    Green - Multiplier up.
 
-    Collect powerups to increase your score or your score multiplier!'
+    Purple - Extra points.
+
+    Blue - Even more extra points.
+
+    Yellow - 5 seconds of invincibility.
+
+    Pink - Heal your ship for 1 health.
+
+    Orange - Increased fire rate for 10 seconds.
+
+    White - Bomb that destroys all obstacles around you.'
 --- !u!222 &1798603192
 CanvasRenderer:
   m_ObjectHideFlags: 0

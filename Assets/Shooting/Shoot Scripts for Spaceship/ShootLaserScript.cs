@@ -6,13 +6,22 @@ public class ShootLaserScript : MonoBehaviour {
 
     public GameObject laserPrefab;
     public Transform laserSpawn;
-
     public GameObject laserSound;
 
-    public float fireRate = 0.5F;
+	public float spead = 10;
+	public float baseFireRate;
+
+	private float fireRate;
     private float nextFire = 0.5F;
     private float myTime = 0.0F;
-    public float spead = 10;
+	private bool fireRateBuffed;
+	private IEnumerator buffInst;
+
+	void Start()
+	{
+		fireRateBuffed = false;
+		fireRate = baseFireRate;
+	}
 
     // Update is called once per frame
     void Update()
@@ -41,5 +50,26 @@ public class ShootLaserScript : MonoBehaviour {
             nextFire = nextFire - myTime;
             myTime = 0.0F;
         }
+	}
+
+	//increase fire rate for time and by multiplier, refreshing if already active
+	public void fireRateUp(int rateMultiplier, int buffTime)
+	{
+		if (fireRateBuffed)
+		{
+			StopCoroutine (buffInst);
+		}
+		buffInst = FireRateUp (rateMultiplier, buffTime);
+		StartCoroutine (buffInst);
+	}
+
+	//coroutine to increase fire rate for a time
+	IEnumerator FireRateUp(int rateMultiplier, int buffTime)
+	{
+		fireRateBuffed = true;
+		fireRate /= rateMultiplier;
+		yield return new WaitForSeconds (buffTime);
+		fireRate = baseFireRate;
+		fireRateBuffed = false;
 	}
 }

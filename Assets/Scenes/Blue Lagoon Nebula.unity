@@ -614,8 +614,8 @@ MonoBehaviour:
   plasmaSpawn: {fileID: 1181240668}
   plasmaSound: {fileID: 1524910537099220, guid: e990e91ecf7fc8642863ffe6a62da944,
     type: 2}
-  fireRate: 0.5
   speed: 10
+  baseFireRate: 0.5
 --- !u!114 &420304628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,8 +631,8 @@ MonoBehaviour:
     type: 2}
   laserSpawn: {fileID: 60618906}
   laserSound: {fileID: 1163224434748488, guid: cc3562036d20c3c459c8bbaf366bb2f7, type: 2}
-  fireRate: 0.5
   spead: 10
+  baseFireRate: 0.5
 --- !u!4 &420304636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4151268724041448, guid: d00aeee92f586854f98b0de1e30fca5a,
@@ -2563,6 +2563,9 @@ MonoBehaviour:
   - {fileID: 54004743754651468, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 2}
   - {fileID: 54920019926308470, guid: 8f226a393243a0141bace5fd6b60bafa, type: 2}
   - {fileID: 54095830009368428, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 2}
+  - {fileID: 54079657073091128, guid: b34bf25cecb5fc24c91de3edea19cb13, type: 2}
+  - {fileID: 54602731061310822, guid: 586acbe765df7c34385298970076297e, type: 2}
+  - {fileID: 54849378145280008, guid: cd34118c604e29141afea74caecd70f2, type: 2}
 --- !u!1 &2021526613
 GameObject:
   m_ObjectHideFlags: 0
