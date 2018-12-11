@@ -2310,13 +2310,16 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.6
+    m_LineSpacing: 0.5
   m_Text: "Fly your ship through the Blue Lagoon Nebula but watch out for asteroids
-    and enemy ships\n\nMove Up,Left,Down and Right with the mouse, OR W,A,S,D, OR
-    Arrow Keys\n\nShoot with left mouse (For asteroids) and right mouse (For ships)\n\nCollect
-    powerups to increase your score or your score multiplier!\n\nAt the end of a run
-    your score will be converted into upgrade points. \nSpend these to make your next
-    run better!"
+    and enemy ships!\n\nControls:\nMove up, down, left, and Right with the Mouse,
+    W A S D, or Arrow Keys.\nShoot lasers with the left mouse button (for asteroids)
+    and the right mouse button (for ships).\n\nCollect powerups to aid you in your
+    mission!\nPurple - Extra points.\nBlue - Even more extra points.\nGreen - Multiplier
+    increase.\nYellow - Temporary invincibility.\nPink - Health restore.\nOrange -
+    Temporary fire rate increase.\nWhite - Bomb that destroys surrounding obstacles.\n\nAt
+    the end of a run your score will be converted into upgrade points. \nSpend these
+    to make your next run better!"
 --- !u!222 &1798603192
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7,19 +7,16 @@ public class FireRateHandler : PowerupHandler
 	public int fireRateMultiplier;
 	public int fireRateTime;
 
-	private ShootLaserScript laserScript;
-	private ShootPlasmaScript plasmaScript;
+	private ShootScript shootScript;
 
 	void Start ()
 	{
 		GameObject player = GameObject.FindWithTag("Player");
-		laserScript = player.GetComponent<ShootLaserScript> ();
-		plasmaScript = player.GetComponent<ShootPlasmaScript> ();
+		shootScript = player.GetComponent<ShootScript> ();
 	}
 
 	public override void Apply()
 	{
-		plasmaScript.fireRateUp (fireRateMultiplier, fireRateTime);
-		laserScript.fireRateUp (fireRateMultiplier, fireRateTime);
+		shootScript.FireRateUp (fireRateMultiplier, fireRateTime);
 	}
 }
