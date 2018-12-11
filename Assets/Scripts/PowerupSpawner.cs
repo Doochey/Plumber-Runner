@@ -32,7 +32,7 @@ public class PowerupSpawner : MonoBehaviour {
 			float z = Random.Range(zSpawnOrigin - randomSpawnRange, zSpawnOrigin + randomSpawnRange);
 
 			Rigidbody powerupClone = Instantiate(powerupPrefabs[Random.Range(0,powerupPrefabs.Length)], 
-				(new Vector3(x, y, z)),transform.rotation);
+				(new Vector3(x, y, z)),transform.rotation * Quaternion.Euler (new Vector3(0,180,0)));
 			speed = Random.Range(minSpeed, maxSpeed);
 			powerupClone.velocity = transform.up * speed;
 			eSpawned++;

@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce4cbc65e5dfe64cbe63cf7da39f3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 420304626}
+  gameController: {fileID: 1718540624}
   healthBarSlider: {fileID: 166184472}
 --- !u!114 &166184472
 MonoBehaviour:
@@ -858,6 +858,43 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1681818292923228, guid: d00aeee92f586854f98b0de1e30fca5a,
     type: 2}
   m_PrefabInternal: {fileID: 1785929126}
+--- !u!108 &420304636
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420304626}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0, g: 0.94523287, b: 1, a: 1}
+  m_Intensity: 10
+  m_Range: 5
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &535663758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,12 +3239,12 @@ Prefab:
     - target: {fileID: 224725169419803096, guid: ae54ad885bbee4a4496eef204360b57d,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224793994960607500, guid: ae54ad885bbee4a4496eef204360b57d,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224239211417730674, guid: ae54ad885bbee4a4496eef204360b57d,
         type: 2}
@@ -3895,6 +3932,7 @@ GameObject:
   - component: {fileID: 1718540629}
   - component: {fileID: 1718540628}
   - component: {fileID: 1718540632}
+  - component: {fileID: 1718540633}
   m_Layer: 5
   m_Name: Game Controller
   m_TagString: GameController
@@ -4014,6 +4052,20 @@ MonoBehaviour:
   player: {fileID: 420304626}
   scoreDivisor: 1000
   upgradePoints: {fileID: 2014772788}
+--- !u!114 &1718540633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718540624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c4e33fbcc2c26438bc127e846dae78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 420304626}
+  gracePeriod: 1
+  startingHealth: 5
 --- !u!1 &1722759038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4342,7 +4394,13 @@ Prefab:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114299218269377524, guid: d00aeee92f586854f98b0de1e30fca5a,
+        type: 2}
+      propertyPath: baseFireRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114373645782103756, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: d00aeee92f586854f98b0de1e30fca5a, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1796150821
@@ -4745,7 +4803,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1922437406}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.70710677, w: 0}
+  m_LocalRotation: {x: 0.006170608, y: -0.7070799, z: 0.7070799, w: 0.006170608}
   m_LocalPosition: {x: 0, y: 1.27, z: 138.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4763,7 +4821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aebe65d773e98747a1ce2347c2e46f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupSpawnNumber: 20
+  powerupSpawnNumber: 10
   minSpeed: 20
   maxSpeed: 30
   randomSpawnRange: 5
@@ -4773,6 +4831,11 @@ MonoBehaviour:
   powerupPrefabs:
   - {fileID: 54347663160046744, guid: 5c02591794acece409986647ed6329a7, type: 2}
   - {fileID: 54004743754651468, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 2}
+  - {fileID: 54849378145280008, guid: cd34118c604e29141afea74caecd70f2, type: 2}
+  - {fileID: 54079657073091128, guid: b34bf25cecb5fc24c91de3edea19cb13, type: 2}
+  - {fileID: 54095830009368428, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 2}
+  - {fileID: 54602731061310822, guid: 586acbe765df7c34385298970076297e, type: 2}
+  - {fileID: 54920019926308470, guid: 8f226a393243a0141bace5fd6b60bafa, type: 2}
 --- !u!1 &1926668301
 GameObject:
   m_ObjectHideFlags: 0
