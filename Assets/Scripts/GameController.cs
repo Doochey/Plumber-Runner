@@ -68,4 +68,5 @@ public class GameController : MonoBehaviour
 		HUDScore.text = "SCORE: " + gameObject.GetComponent<ScoreCounter>().getScore();
 		HUDMultiplier.text = "MULTIPLIER: " + gameObject.GetComponent<MultiplierCounter>().GetMultiplier() + "x";
 	}
+
 }

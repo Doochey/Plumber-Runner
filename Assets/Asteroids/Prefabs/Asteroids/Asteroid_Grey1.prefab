@@ -23,9 +23,11 @@ GameObject:
   - component: {fileID: 23491786225429002}
   - component: {fileID: 54692080000496830}
   - component: {fileID: 114569991115344044}
+  - component: {fileID: 65887820285307396}
+  - component: {fileID: 114045231961817070}
   m_Layer: 0
   m_Name: Asteroid_Grey1
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278143737603518}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000052901182, y: 0, z: 0}
+  m_LocalPosition: {x: -1.473958, y: 1.040956, z: 18.194435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,6 +102,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65887820285307396
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278143737603518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8040773, y: 1.4416597, z: 2.2297}
+  m_Center: {x: 0, y: 0.0064971447, z: -0.032277107}
+--- !u!114 &114045231961817070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278143737603518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de35c519eec04d64bb860b58ca281dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageDealt: 1
+  collisionSound: {fileID: 1726707498881810, guid: 9ddbe6385c95b5e41a56105c7681c164,
+    type: 2}
 --- !u!114 &114569991115344044
 MonoBehaviour:
   m_ObjectHideFlags: 1

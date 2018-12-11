@@ -9,17 +9,19 @@ public class DistanceCounter : MonoBehaviour
 	public int startingDistance;
 
 	private int distanceCount;
+	private int engineValue;
 
 	void Start ()
 	{
 		distanceCount = startingDistance;
+		engineValue = GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[1];
 	}
 	
 	void Update ()
 	{
 		if (player != null)
 		{
-			distanceCount += (int) (100 * Time.deltaTime);
+			distanceCount += (int) (100 * (1 + engineValue / 5) * Time.deltaTime);
 		}
 	}
 

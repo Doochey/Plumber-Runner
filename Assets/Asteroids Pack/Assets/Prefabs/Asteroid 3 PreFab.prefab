@@ -29,6 +29,7 @@ GameObject:
   - component: {fileID: 114796673561206138}
   - component: {fileID: 135684928422762076}
   - component: {fileID: 114742531358342088}
+  - component: {fileID: 114560571487277740}
   m_Layer: 0
   m_Name: Asteroid 3 PreFab
   m_TagString: Asteroid
@@ -348,9 +349,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8210ef39816e9b24e8c083a9516ffc26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randRange: 20
+  randRange: 15
   minSize: 0.5
   maxSize: 1
+--- !u!114 &114560571487277740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e0889d4fa17174ab8b34dce41463e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroids:
+  - {fileID: 54692080000496830, guid: 3651dddd1f0a81648818a345eb7b0ca2, type: 2}
+  - {fileID: 54439739919534170, guid: ab43b9240c8fa1b41b811ca2b8b94854, type: 2}
+  - {fileID: 54643816459724708, guid: f342d03f05dc72c44bf26c94bc4c8462, type: 2}
+  speed: 1
+  scale: 0.8
 --- !u!114 &114742531358342088
 MonoBehaviour:
   m_ObjectHideFlags: 1

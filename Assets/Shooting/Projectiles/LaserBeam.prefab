@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 114326655957792542}
   - component: {fileID: 54562332427098144}
   - component: {fileID: 135346656642966892}
-  - component: {fileID: 114731038691941580}
   - component: {fileID: 198571951650164038}
+  - component: {fileID: 114480039578906594}
   - component: {fileID: 199900146345826596}
   m_Layer: 0
   m_Name: LaserBeam
@@ -41,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1783872800064038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.92, z: -4.37}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 5.47, y: 0.92, z: 0.72}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.06}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_lineColor: {r: 0, g: 1, b: 0.49019608, a: 1}
   m_lineWidth: 60
   m_lightSaberFactor: 0.8
---- !u!114 &114731038691941580
+--- !u!114 &114480039578906594
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783872800064038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bcac9dbfb1a1424b967f1b5cc035ccd, type: 3}
+  m_Script: {fileID: 11500000, guid: 1693a418bd4b3d34fbf2d3f707904e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   explosionSound: {fileID: 1823085784587900, guid: aa7bb730ba172424d8cefcfb8e7f9310,
     type: 2}
+  target: Asteroid
 --- !u!135 &135346656642966892
 SphereCollider:
   m_ObjectHideFlags: 1

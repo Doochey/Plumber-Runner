@@ -24,6 +24,13 @@
         <e p="Materials" t="Include">
           <e p="UI-Default-No-Alpha.shader" t="Include" />
         </e>
+        <e p="Modular Space Raider" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Shader" t="Include">
+            <e p="Dynamic_Illum_Spec.shader" t="Include" />
+            <e p="how_to_use.txt" t="Include" />
+          </e>
+        </e>
         <e p="Powerups" t="Include">
           <e p="Scripts" t="Include">
             <e p="AnimationScript.cs" t="Include" />
@@ -52,35 +59,82 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="ActiveStateToggler.cs" t="Include" />
           <e p="AnimationControllers" t="Include">
-            <e p="GameOverManager.cs" t="Include" />
             <e p="MoveAnimController.cs" t="Include" />
           </e>
-          <e p="ApplicationManager.cs" t="Include" />
           <e p="AsteroidSpawner.cs" t="Include" />
-          <e p="ChangeColor.cs" t="Include" />
-          <e p="Collision.cs" t="Include" />
+          <e p="asteroidWrongShotMultiplier.cs" t="Include" />
+          <e p="ChangeSpeed.cs" t="Include" />
+          <e p="ClearUpgradeData.cs" t="Include" />
           <e p="DistanceCounter.cs" t="Include" />
-          <e p="DragMe.cs" t="Include" />
-          <e p="DragPanel.cs" t="Include" />
-          <e p="DropMe.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
+          <e p="HealthBarController.cs" t="Include" />
+          <e p="HighscoreHandler.cs" t="Include" />
+          <e p="incdecText.cs" t="Include" />
           <e p="LoadSceneOnClick.cs" t="Include" />
+          <e p="loadUpgradeMenu.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="MultiplierCounter.cs" t="Include" />
-          <e p="PanelManager.cs" t="Include" />
+          <e p="ObstacleCollision.cs" t="Include" />
+          <e p="Pause.cs" t="Include" />
           <e p="PowerupCollision.cs" t="Include" />
           <e p="PowerupSpawner.cs" t="Include" />
           <e p="QuitOnClick.cs" t="Include" />
           <e p="Quitter.cs" t="Include" />
           <e p="ResetSpawn.cs" t="Include" />
-          <e p="ResizePanel.cs" t="Include" />
           <e p="Rotate.cs" t="Include" />
           <e p="ScoreCounter.cs" t="Include" />
-          <e p="ScrollDetailTexture.cs" t="Include" />
+          <e p="ShipHealth.cs" t="Include" />
           <e p="ShowSliderValue.cs" t="Include" />
-          <e p="TiltWindow.cs" t="Include" />
+          <e p="UpgradeHandler.cs" t="Include" />
+        </e>
+        <e p="Shooting" t="Include">
+          <e p="Asset Packs" t="Include">
+            <e p="VolumetricLines" t="Include">
+              <e p="ExampleScenes" t="Include">
+                <e p="ExampleScripts" t="Include">
+                  <e p="CannonBehavior.cs" t="Include" />
+                  <e p="CreateSinShapedLineStrip.cs" t="Include" />
+                  <e p="ShotBehavior.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Utils" t="Include">
+                  <e p="TransformExtensionMethods.cs" t="Include" />
+                </e>
+                <e p="VolumetricLineBehavior.cs" t="Include" />
+                <e p="VolumetricLineSettings.cs" t="Include" />
+                <e p="VolumetricLineStripBehavior.cs" t="Include" />
+                <e p="VolumetricLineVertexData.cs" t="Include" />
+                <e p="VolumetricMultiLineBehavior.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="_SimpleShader.cginc" t="Include" />
+                <e p="_StripShader.cginc" t="Include" />
+                <e p="Additive.shader" t="Include" />
+                <e p="AlphaBlended.shader" t="Include" />
+                <e p="Fast-Additive.shader" t="Include" />
+                <e p="Fast-AlphaBlended.shader" t="Include" />
+                <e p="Strip-Additive.shader" t="Include" />
+                <e p="Strip-AlphaBlended.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Zero Rare" t="Include">
+              <e p="Retro Sound Effects" t="Include">
+                <e p="Demo" t="Include">
+                  <e p="Demo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Projectiles" t="Include">
+            <e p="ProjectileCollisionScript.cs" t="Include" />
+            <e p="ShootScript.cs" t="Include" />
+          </e>
+          <e p="Sound Effects" t="Include">
+            <e p="MakeSoundScript.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
@@ -255,6 +309,7 @@
               <e p="PriorityParticleAlpha.shader" t="Include" />
             </e>
           </e>
+          <e p="PlayerPrefsX.cs" t="Include" />
           <e p="Prototyping" t="Include">
             <e p="Shaders" t="Include">
               <e p="WorldCoordDiffuse.shader" t="Include" />

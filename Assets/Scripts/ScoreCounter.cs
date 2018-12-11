@@ -10,17 +10,19 @@ public class ScoreCounter : MonoBehaviour
 	public int startingScore;
 
 	private int scoreCount;
+	private int engineValue;
 
 	void Start ()
 	{
 		scoreCount = startingScore;
+		engineValue = GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[1];
 	}
 
 	void Update ()
 	{
 		if (player != null)
 		{
-			scoreCount += (int) (100 * Time.deltaTime) * multiplier.GetMultiplier();
+			scoreCount += (int) (100 * (1 + engineValue / 5) * Time.deltaTime) * multiplier.GetMultiplier();
 		}
 	}
 

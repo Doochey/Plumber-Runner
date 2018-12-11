@@ -42,9 +42,14 @@ public class EnemySpawner : MonoBehaviour {
 			Rigidbody enemyClone = Instantiate(spacehipPrefabs[Random.Range(0,spacehipPrefabs.Length)], 
 				(new Vector3(x, y, z)),transform.rotation);
 			speed = Random.Range(minSpeed, maxSpeed);
-			enemyClone.velocity = transform.up * speed;
+			enemyClone.velocity = transform.forward * speed;
 			eSpawned++;
 		}
+	}
+	
+	public void decreaseEspawned(int x)
+	{
+		eSpawned -= x;
 	}
 
 	

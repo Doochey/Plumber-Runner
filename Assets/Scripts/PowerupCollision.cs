@@ -11,15 +11,19 @@ public class PowerupCollision : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Player"))
 		{
-            // Play powerup sound
-            GameObject makeSound = Instantiate(powerupSound, this.transform.position, this.transform.rotation) as GameObject;
+			if (GameObject.FindWithTag("Player").GetComponent<Renderer>().enabled)
+			{
+				// Play powerup sound
+				GameObject makeSound = Instantiate(powerupSound, this.transform.position, this.transform.rotation) as GameObject;
 
-            var exp = other.gameObject.GetComponent<ParticleSystem>();
-			exp.Play();
+				var exp = other.gameObject.GetComponent<ParticleSystem>();
+				exp.Play();
 
-			powerupEffect.Apply ();
+				powerupEffect.Apply ();
 
-			Destroy(gameObject);
+				Destroy(gameObject);
+			}
+            
 		}
 	}
 }

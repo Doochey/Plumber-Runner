@@ -17,7 +17,7 @@ public class ObstacleCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
 	{
-        if ( other.gameObject.CompareTag("Player"))
+        if ( other.gameObject.CompareTag("Player") && GameObject.FindWithTag("Player").GetComponent<Renderer>().enabled)
 		{
 			GameObject player = other.gameObject;
 
@@ -47,13 +47,26 @@ public class ObstacleCollision : MonoBehaviour
 					child.gameObject.SetActive(false);
 				}
 				
-				Destroy(player, exp.main.duration);
+				
+				Destroy(other.gameObject, exp.main.duration);
 			}
 			//otherwise destroy obstacle
 			else
 			{
+				if (gameObject.tag.Equals("Asteroid"))
+				{
+					// Decrease aSpawned Counter
+					GameObject asteroidSpawner = GameObject.FindWithTag("ASpawner");
+					asteroidSpawner.GetComponent<AsteroidSpawner>().decreaseAspawned(1);
+				} else if (gameObject.tag.Equals("Enemy"))
+				{
+					// Decrease eSpawned Counter
+					GameObject enemySpawner = GameObject.FindWithTag("ESpawner");
+					enemySpawner.GetComponent<EnemySpawner>().decreaseEspawned(1);
+				}
 				Destroy (this.gameObject);
 			}
 		}
 	}
+
 }
