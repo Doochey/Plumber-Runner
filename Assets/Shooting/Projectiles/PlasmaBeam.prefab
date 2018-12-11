@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 114700650936621530}
   - component: {fileID: 54368475982339078}
   - component: {fileID: 135922081229612974}
-  - component: {fileID: 114795086478450696}
   - component: {fileID: 198997082353053924}
   - component: {fileID: 199143717942008352}
+  - component: {fileID: 114048916818766200}
   m_Layer: 0
   m_Name: PlasmaBeam
   m_TagString: Plasma
@@ -41,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1002574685025162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.92, z: -4.37}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 2.66, y: 0.92, z: -0.02}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -104,6 +104,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114048916818766200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002574685025162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1693a418bd4b3d34fbf2d3f707904e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSound: {fileID: 1533989691724574, guid: 624029bddee463c47979f883f179b1b8,
+    type: 2}
+  target: Enemy
 --- !u!114 &114700650936621530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,22 +133,9 @@ MonoBehaviour:
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 55}
-  m_lineColor: {r: 0, g: 1, b: 1, a: 1}
+  m_lineColor: {r: 1, g: 0, b: 1, a: 1}
   m_lineWidth: 60
   m_lightSaberFactor: 0.8
---- !u!114 &114795086478450696
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1002574685025162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f49dabcb90081947bc1e1bfccebe987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionSound: {fileID: 1533989691724574, guid: 624029bddee463c47979f883f179b1b8,
-    type: 2}
 --- !u!135 &135922081229612974
 SphereCollider:
   m_ObjectHideFlags: 1
