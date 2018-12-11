@@ -10,12 +10,16 @@ public class ShipHealth : MonoBehaviour
 
 	void Start ()
 	{
-		healthCount = startingHealth;
+		healthCount = startingHealth + GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[0];
 	}
 
 	public void takeDamage(int damage)
 	{
 		healthCount -= damage;
+		if (healthCount == 0)
+		{
+			GameObject.FindWithTag("Fill").SetActive(false);
+		}
 	}
 
 	public int getHealth()
@@ -25,6 +29,6 @@ public class ShipHealth : MonoBehaviour
 
 	public int getMaxHealth()
 	{
-		return startingHealth;
+		return startingHealth + GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[0];
 	}
 }

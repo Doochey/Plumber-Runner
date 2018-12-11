@@ -11,6 +11,8 @@ TagManager:
   - Asteroid
   - ASpawner
   - ESpawner
+  - SpeedDust
+  - Fill
   layers:
   - Default
   - TransparentFX

@@ -22,11 +22,16 @@ public class ShootScript : MonoBehaviour {
     private float nextFire = 0.5F;
     private float myTime = 0.0F;
 
+    void Start()
+    {
+        fireRate = fireRate - ((float) GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[2]/20);
+    }
     void Fire(GameObject beam, GameObject sound)
     {
         // Make laser sound
         GameObject makeSound = Instantiate(sound, this.transform.position, this.transform.rotation) as GameObject;
 
+        
         nextFire = myTime + fireRate;
 
         // Create the laser beam

@@ -28,6 +28,7 @@ public class AsteroidSpawner : MonoBehaviour
 	private GameObject gameController;
 	private int bossCounter = 0;
 	private int cooldownCounter = 0;
+	private int engineValue;
 	
 	void Start ()
 	{
@@ -35,7 +36,8 @@ public class AsteroidSpawner : MonoBehaviour
 		aSpawned = 0;
 		modifier = 1;
 		InvokeRepeating("spawnRoid", 1f, spawnRate);
-		
+		engineValue = GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[1];
+
 	}
 
 	void Update()
@@ -43,7 +45,7 @@ public class AsteroidSpawner : MonoBehaviour
 		int distanceValue = gameController.GetComponent<DistanceCounter>().GetDistance();
 		if (distanceValue - oldDistance >= 500)
 		{
-			if (bossCounter >= 4)
+			if (bossCounter >= 4 + engineValue)
 			{
 				CancelInvoke();
 				spawnRate = 0.1f;
@@ -53,7 +55,7 @@ public class AsteroidSpawner : MonoBehaviour
 				InvokeRepeating("spawnRoid", 0.1f, spawnRate);
 				oldDistance = distanceValue;
 
-			} else if (cooldownCounter >= 1)
+			} else if (cooldownCounter >= 1 + engineValue)
 			{
 				CancelInvoke();
 				modifier = 2;
@@ -100,7 +102,7 @@ public class AsteroidSpawner : MonoBehaviour
 			Rigidbody asteroidClone = Instantiate(asteroidPrefabs[Random.Range(0,asteroidPrefabs.Length)], 
 				(new Vector3(x, y, z)),transform.rotation);
 			speed = Random.Range(minSpeed, maxSpeed) ;
-			asteroidClone.velocity = transform.forward * -speed * modifier;
+			asteroidClone.velocity = transform.forward * -speed * (modifier + engineValue / 10);
 			aSpawned++;
 		}
 	}

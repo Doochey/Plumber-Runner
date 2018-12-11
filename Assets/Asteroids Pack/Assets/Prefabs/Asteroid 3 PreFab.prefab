@@ -360,7 +360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 130102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde713dd128cd734da0f5e21953b4db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 60e0889d4fa17174ab8b34dce41463e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   asteroids:

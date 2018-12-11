@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 135415017422116558}
   - component: {fileID: 114762741397450314}
   - component: {fileID: 114963712717596068}
-  - component: {fileID: 114446940490140466}
+  - component: {fileID: 114541362501709328}
   m_Layer: 0
   m_Name: Asteroid_Brown2
   m_TagString: Asteroid
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateMin: 0
   rotateMax: 250
---- !u!114 &114446940490140466
+--- !u!114 &114541362501709328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,14 +125,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602260296884532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde713dd128cd734da0f5e21953b4db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 60e0889d4fa17174ab8b34dce41463e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   asteroids:
   - {fileID: 54692080000496830, guid: 3651dddd1f0a81648818a345eb7b0ca2, type: 2}
   - {fileID: 54439739919534170, guid: ab43b9240c8fa1b41b811ca2b8b94854, type: 2}
   - {fileID: 54643816459724708, guid: f342d03f05dc72c44bf26c94bc4c8462, type: 2}
-  - {fileID: 54507138890261632, guid: c0229638a0e9a034591c04dddebf2e59, type: 2}
   speed: 1
   scale: 0.8
 --- !u!114 &114762741397450314

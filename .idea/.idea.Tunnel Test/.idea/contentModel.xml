@@ -16,11 +16,15 @@
             </e>
           </e>
         </e>
+        <e p="ChangeSpeed.cs" t="Include" />
+        <e p="ClearUpgradeData.cs" t="Include" />
         <e p="Fonts" t="Include">
           <e p="Jupiter" t="Include">
             <e p="LICENSE.txt" t="Include" />
           </e>
         </e>
+        <e p="incdecText.cs" t="Include" />
+        <e p="loadUpgradeMenu.cs" t="Include" />
         <e p="Materials" t="Include">
           <e p="UI-Default-No-Alpha.shader" t="Include" />
         </e>
@@ -126,6 +130,8 @@
           <e p="Projectiles" t="Include">
             <e p="LaserCollision.cs" t="Include" />
             <e p="PlasmaCollision.cs" t="Include" />
+            <e p="ProjectileCollisionScript.cs" t="Include" />
+            <e p="ShootScript.cs" t="Include" />
           </e>
           <e p="Shoot Scripts for Spaceship" t="Include">
             <e p="ShootLaserScript.cs" t="Include" />
@@ -384,6 +390,7 @@
             </e>
           </e>
         </e>
+        <e p="UpgradeHandler.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
