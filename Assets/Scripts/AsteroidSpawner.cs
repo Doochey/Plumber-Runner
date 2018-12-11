@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 
 public class AsteroidSpawner : MonoBehaviour
 {
-	
 	public float asteroidSpawnNumber = 1f;
 	public float minSpeed = 10f;
 	public float maxSpeed = 50f;
@@ -18,9 +17,7 @@ public class AsteroidSpawner : MonoBehaviour
 	public Rigidbody[] asteroidPrefabs;
 	public float percentSpeedIncrease = 0.1f;
 	public float spawnRate = 1f;
-	
-	
-	
+
 	private int aSpawned;
 	private float speed;
 	private float oldDistance = 0;
@@ -37,7 +34,6 @@ public class AsteroidSpawner : MonoBehaviour
 		modifier = 1;
 		InvokeRepeating("spawnRoid", 1f, spawnRate);
 		engineValue = GameObject.FindWithTag("GameController").GetComponent<UpgradeHandler>().getValues()[1];
-
 	}
 
 	void Update()
@@ -78,11 +74,7 @@ public class AsteroidSpawner : MonoBehaviour
 				oldDistance = distanceValue;
 				bossCounter++;
 				InvokeRepeating("spawnRoid", 1f, spawnRate);
-				
 			}
-			
-			
-
 		}
 	}
 
@@ -96,9 +88,6 @@ public class AsteroidSpawner : MonoBehaviour
 			float y = Random.Range(ySpawnOrigin - randomSpawnRange, ySpawnOrigin + randomSpawnRange);
 			float z = Random.Range(zSpawnOrigin - randomSpawnRange, zSpawnOrigin + randomSpawnRange);
 			
-			
-			
-			
 			Rigidbody asteroidClone = Instantiate(asteroidPrefabs[Random.Range(0,asteroidPrefabs.Length)], 
 				(new Vector3(x, y, z)),transform.rotation);
 			speed = Random.Range(minSpeed, maxSpeed) ;
@@ -111,6 +100,4 @@ public class AsteroidSpawner : MonoBehaviour
 	{
 		aSpawned -= x;
 	}
-
-	
 }

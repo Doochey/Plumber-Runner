@@ -3239,12 +3239,12 @@ Prefab:
     - target: {fileID: 224725169419803096, guid: ae54ad885bbee4a4496eef204360b57d,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224793994960607500, guid: ae54ad885bbee4a4496eef204360b57d,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224239211417730674, guid: ae54ad885bbee4a4496eef204360b57d,
         type: 2}
@@ -4792,7 +4792,7 @@ GameObject:
   - component: {fileID: 1922437408}
   m_Layer: 0
   m_Name: Powerup Spawner
-  m_TagString: Untagged
+  m_TagString: PSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4836,6 +4836,7 @@ MonoBehaviour:
   - {fileID: 54095830009368428, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 2}
   - {fileID: 54602731061310822, guid: 586acbe765df7c34385298970076297e, type: 2}
   - {fileID: 54920019926308470, guid: 8f226a393243a0141bace5fd6b60bafa, type: 2}
+  spawnInterval: 6
 --- !u!1 &1926668301
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ TagManager:
   - ESpawner
   - SpeedDust
   - Fill
+  - PSpawner
   layers:
   - Default
   - TransparentFX
