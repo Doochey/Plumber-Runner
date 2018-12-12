@@ -116,7 +116,7 @@ MonoBehaviour:
   explosion: {fileID: 1638732926112546, guid: 8b14d45084d476d4dadcdf76a237959c, type: 2}
   explosionSound: {fileID: 1533989691724574, guid: 624029bddee463c47979f883f179b1b8,
     type: 2}
-  targetTag: Enemy
+  target: Enemy
 --- !u!114 &114700650936621530
 MonoBehaviour:
   m_ObjectHideFlags: 1

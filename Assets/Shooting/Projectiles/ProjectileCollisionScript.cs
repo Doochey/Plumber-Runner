@@ -5,6 +5,7 @@ using UnityEngine;
 // Attach this script to each of the projectiles to enable destruction on collision
 public class ProjectileCollisionScript : MonoBehaviour {
 
+    public GameObject explosion;
     public GameObject explosionSound;
     public string target;
 
@@ -17,11 +18,8 @@ public class ProjectileCollisionScript : MonoBehaviour {
         if (collider.gameObject.tag == target)
         {
             // Play the explosion sound
+            GameObject makeExplosion = Instantiate(explosion, this.transform.position, this.transform.rotation) as GameObject;
             GameObject makeSound = Instantiate(explosionSound, this.transform.position, this.transform.rotation) as GameObject;
-
-            // Show a particle effect as an explosion
-            var exp = gameObject.GetComponent<ParticleSystem>();
-            exp.Play();
 
             // Destroy the asteroid
             Destroy(collider.gameObject);

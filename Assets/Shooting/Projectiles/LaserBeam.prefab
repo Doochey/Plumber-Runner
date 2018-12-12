@@ -134,7 +134,7 @@ MonoBehaviour:
   explosion: {fileID: 1638732926112546, guid: 8b14d45084d476d4dadcdf76a237959c, type: 2}
   explosionSound: {fileID: 1823085784587900, guid: aa7bb730ba172424d8cefcfb8e7f9310,
     type: 2}
-  targetTag: Asteroid
+  target: Asteroid
 --- !u!135 &135346656642966892
 SphereCollider:
   m_ObjectHideFlags: 1
